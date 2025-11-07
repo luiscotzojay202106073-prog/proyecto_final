@@ -7,6 +7,8 @@
     <title>Estudiantes</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 
 <body>
@@ -61,7 +63,88 @@
         </div>
     </div>
 
+
     <br><br><br>
+    <!--agregar estudiantes-->
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary btn-lg rounded-pill shadow px-4" data-bs-toggle="modal"
+        data-bs-target="#exampleModal">
+        <i class="bi bi-plus-circle"></i> NUEVO REGISTRO
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0"><i class="bi bi-person-badge"></i> Registro de Estudiante</h5>
+                        </div>
+                        <div class="card-body">
+                            <form action="<?=base_url('agregar_estudiante');?>" method="post">
+                                <div class="mb-2">
+                                    <label for="txt_carne" class="form-label">Carné del alumno</label>
+                                    <input type="number" class="form-control" name="txt_carne" id="txt_carne" required>
+                                </div>
+
+                                <div class="row g-2">
+                                    <div class="col-md-6">
+                                        <label for="txt_nombre" class="form-label">Nombre</label>
+                                        <input type="text" class="form-control" name="txt_nombre" id="txt_nombre"
+                                            required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="txt_apellido" class="form-label">Apellido</label>
+                                        <input type="text" class="form-control" name="txt_apellido" id="txt_apellido"
+                                            required>
+                                    </div>
+                                </div>
+
+                                <div class="row g-2 mt-1">
+                                    <div class="col-md-6">
+                                        <label for="txt_email" class="form-label">Correo electrónico</label>
+                                        <input type="email" class="form-control" name="txt_email" id="txt_email"
+                                            required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="txt_telefono" class="form-label">Teléfono</label>
+                                        <input type="number" class="form-control" name="txt_telefono" id="txt_telefono"
+                                            required>
+                                    </div>
+                                </div>
+
+                                <div class="row g-2 mt-1">
+                                    <div class="col-md-6">
+                                        <label for="txt_nacimiento" class="form-label">Fecha de nacimiento</label>
+                                        <input type="date" class="form-control" name="txt_nacimiento"
+                                            id="txt_nacimiento" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="txt_codigo" class="form-label">Código de grado</label>
+                                        <input type="text" class="form-control" name="txt_codigo" id="txt_codigo"
+                                            required>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-end gap-2 mt-3">
+                                    <button type="submit" class="btn btn-primary btn-lg rounded-pill shadow px-4"
+                                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <i class="bi bi-plus-square"></i> Agregar Datos
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
     <h1>Estudiantes</h1>
     <table class="table table-striped-columns">
         <thead>

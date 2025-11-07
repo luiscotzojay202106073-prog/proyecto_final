@@ -13,6 +13,7 @@ $routes->get('grados','GradosController::index');
 //estudiantes
 $routes->get('estudiantes','EstudiantesController::index');
 $routes->post('agregar_estudiante','EstudiantesController::agregarEstudiante');
+$routes->get('eliminar_estudiante/(:num)','EstudiantesController::eliminarEstudiante/$1');
 
 //Unidad1
 $routes->get('unidades1','Unidades1Controller::index');

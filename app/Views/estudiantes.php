@@ -175,6 +175,7 @@
                 <td> <?=$estudiante['fecha_nacimiento'];?> </td>
                 <td> <?=$estudiante['codigo_grado'];?> </td>
                 <td>
+                    <a href="<?=base_url('eliminar_estudiante/').$estudiante['carne_alumno'];?>" class="btn btn-danger">Eliminar <i class="bi bi-trash3"></i></a>
                 </td>
             </tr>
             <?php

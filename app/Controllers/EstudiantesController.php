@@ -26,5 +26,11 @@ class EstudiantesController extends BaseController
             $estudiantes->insert($datos);
             return $this->index();
     }
+
+    public function eliminarEstudiante($id){
+        $estudiante = new EstudiantesModel();
+        $estudiante->delete($id);
+        return $this->index();
+    }
     
 }

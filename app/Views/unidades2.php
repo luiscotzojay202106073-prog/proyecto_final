@@ -15,7 +15,6 @@
         if (!session()->get('activa')) {
             echo "no tiene acceso";
         }else {
-
     ?>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">

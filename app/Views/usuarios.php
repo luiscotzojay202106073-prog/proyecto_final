@@ -7,6 +7,8 @@
     <title>Usuarios</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 
 <body>
@@ -17,7 +19,7 @@
         }else {
 
     ?>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">INED PANAMERICANO DIRECTOR</a>
 
@@ -60,9 +62,74 @@
             </div>
         </div>
     </div>
+            <br><br>
+
+    <!--agregar registros-->
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-outline-primary btn-lg rounded-pill shadow px-4" data-bs-toggle="modal"
+        data-bs-target="#exampleModal">
+        <i class="bi bi-plus-circle"></i> NUEVO REGISTRO
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0"><i class="bi bi-person-badge"></i> Registro de Usuarios</h5>
+                        </div>
+                        <div class="card-body">
+                            <form action="<?=base_url('agregar_usuario');?>" method="post">
+                                
+
+                                <div class="row g-2">
+                                    <div class="col-md-6">
+                                        <label for="txt_nombre" class="form-label">Nombre</label>
+                                        <input type="text" class="form-control" name="txt_nombre" id="txt_nombre"
+                                            required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="txt_email" class="form-label">Correo electrónico</label>
+                                        <input type="email" class="form-control" name="txt_email" id="txt_email"
+                                            required>
+                                    </div>
+                                </div>
+
+                                <div class="row g-2 mt-1">
+                                    <div class="col-md-6">
+                                        <label for="txt_password" class="form-label">Contraseña</label>
+                                        <input type="text" class="form-control" name="txt_password" id="txt_password"
+                                            required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="txt_tipo" class="form-label">Id de tipo de usuario</label>
+                                        <input type="number" class="form-control" name="txt_tipo" id="txt_tipo"
+                                            required>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-end gap-2 mt-3">
+                                    <button type="submit"
+                                        class="btn btn-outline-primary btn-lg rounded-pill shadow px-4"
+                                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <i class="bi bi-plus-square"></i> Agregar Datos
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-    <br><br><br>
+    <br><br>
     <h1>Usuarios</h1>
     <table class="table table-striped-columns">
         <thead>

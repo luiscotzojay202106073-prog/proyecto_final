@@ -35,6 +35,7 @@ $routes->get ('tiposusuarios','TiposusuariosController::index');
 //usuarios
 $routes->get ('usuarios','UsuariosController::mostraru');
 $routes->post('iniciar_sesion','UsuariosController::index');
+$routes->post('agregar_usuario','UsuariosController::agregarUsuario');
 
 //para acceder a los menus
 $routes->get('menu_director','Home::verMenuDirector');

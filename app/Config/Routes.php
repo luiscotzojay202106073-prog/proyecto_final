@@ -37,6 +37,8 @@ $routes->get ('usuarios','UsuariosController::mostraru');
 $routes->post('iniciar_sesion','UsuariosController::index');
 $routes->post('agregar_usuario','UsuariosController::agregarUsuario');
 $routes->get('eliminar_usuario/(:num)','UsuariosController::eliminarUsuario/$1');
+$routes->get('buscar_usuario/(:num)','UsuariosController::buscarusuario/$1');
+$routes->post('modificar_usuario','UsuariosController::modificarUsuario'); 
 
 //para acceder a los menus
 $routes->get('menu_director','Home::verMenuDirector');

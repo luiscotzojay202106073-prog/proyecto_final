@@ -79,4 +79,24 @@ class UsuariosController extends BaseController
         return $this->mostraru();
     }
 
+    public function buscarUsuario($codigo){
+        $usuario = new UsuariosModel();
+        $datos['datos']=$usuario->where('usuario_id',$codigo)->first();
+        return view('form_editar_usuario',$datos);
+    }
+
+    public function modificarUsuario(){
+        $usuario = new UsuariosModel();
+        $datos = [
+            'nombre'=>$this->request->getPost('txt_nombre'),
+            'email'=>$this->request->getPost('txt_email'),
+            'password'=>$this->request->getPost('txt_password'),
+            'tipo_usuario_id'=>$this->request->getPost('txt_tipo')
+        ];
+
+        $codigo = $this->request->getPost('txt_usuario');
+        $usuario->update($codigo, $datos);
+        return $this->mostraru();
+    }
+
 }

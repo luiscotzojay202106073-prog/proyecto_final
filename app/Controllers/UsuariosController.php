@@ -60,4 +60,17 @@ class UsuariosController extends BaseController
         return view('usuarios',$datos);
     }
 
+    public function agregarUsuario(){
+        $usuario = new UsuariosModel();
+        $datos = [
+            'usuario_id'=>$this->request->getPost('txt_usuario'),
+            'nombre'=>$this->request->getPost('txt_nombre'),
+            'email'=>$this->request->getPost('txt_email'),
+            'password'=>$this->request->getPost('txt_password'),
+            'tipo_usuario_id'=>$this->request->getPost('txt_tipo')
+        ];
+            $usuario->insert($datos);
+            return $this->mostraru();
+    }
+
 }

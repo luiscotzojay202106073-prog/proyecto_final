@@ -155,6 +155,9 @@
                 <td> <?=$usuario['email'];?> </td>
                 <td> <?=$usuario['password'];?> </td>
                 <td> <?=$usuario['tipo_usuario_id'];?> </td>
+                <td>
+                    <a href="<?=base_url('eliminar_usuario/').$usuario['usuario_id'];?>" class="btn btn-outline-danger bg-gradient text-danger shadow px-4">Eliminar <i class="bi bi-trash3"></i></a>
+                </td>
             </tr>
             <?php
                 } //fin del ciclo

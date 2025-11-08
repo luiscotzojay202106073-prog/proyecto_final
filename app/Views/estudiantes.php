@@ -21,7 +21,7 @@
     ?>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">INED PANAMERICANO DIRECTOR</a>
+            <a class="navbar-brand" href="#">INED PANAMERICANO DIRECTOR</a>
 
             <!-- Botón para móviles -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -68,7 +68,7 @@
     <!--agregar estudiantes-->
 
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary btn-lg rounded-pill shadow px-4" data-bs-toggle="modal"
+    <button type="button" class="btn btn-outline-primary btn-lg rounded-pill shadow px-4" data-bs-toggle="modal"
         data-bs-target="#exampleModal">
         <i class="bi bi-plus-circle"></i> NUEVO REGISTRO
     </button>
@@ -129,7 +129,7 @@
                                 </div>
 
                                 <div class="d-flex justify-content-end gap-2 mt-3">
-                                    <button type="submit" class="btn btn-primary btn-lg rounded-pill shadow px-4"
+                                    <button type="submit" class="btn btn-outline-primary btn-lg rounded-pill shadow px-4"
                                         data-bs-toggle="modal" data-bs-target="#exampleModal">
                                         <i class="bi bi-plus-square"></i> Agregar Datos
                                     </button>

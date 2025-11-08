@@ -73,4 +73,10 @@ class UsuariosController extends BaseController
             return $this->mostraru();
     }
 
+    public function eliminarUsuario($id){
+        $usuario = new UsuariosModel();
+        $usuario->delete($id);
+        return $this->mostraru();
+    }
+
 }

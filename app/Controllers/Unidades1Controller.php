@@ -26,5 +26,11 @@ class Unidades1Controller extends BaseController
         $unidad1->insert($datos);
         return $this->index();
     }
+   
+    public function eliminarUnidad1($id){
+        $unidad1 = new Unidades1Model();
+        $unidad1->delete($id);
+        return $this->index();
+    }
     
 }

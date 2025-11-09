@@ -164,6 +164,12 @@
                 <td> <?=$unidad['curso_3'];?> </td>
                 <td> <?=$unidad['curso_4'];?> </td>
                 <td> <?=$unidad['curso_5'];?> </td>
+                <td>
+                    <a href="<?=base_url('eliminar_unidad1/').$unidad['carne_alumno'];?>" class="btn btn-outline-danger bg-gradient text-danger shadow px-4">
+  <i class="bi bi-trash-fill fs-4"></i>
+</a>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+                </td>
             </tr>
             <?php
                 } //fin del ciclo

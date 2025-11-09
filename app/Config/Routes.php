@@ -19,6 +19,7 @@ $routes->post('modificar_estudiante','EstudiantesController::modificarEstudiante
 
 //Unidad1
 $routes->get('unidades1','Unidades1Controller::index');
+$routes->post('agregar_unidad1','Unidades1Controller::agregarUnidad1');
 
 //Unidad2
 $routes->get('unidades2','Unidades2Controller::index');

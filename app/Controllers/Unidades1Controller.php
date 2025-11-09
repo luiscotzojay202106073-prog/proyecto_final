@@ -12,4 +12,19 @@ class Unidades1Controller extends BaseController
         return view('unidades1',$datos);
     }
     
+    public function agregarUnidad1(){
+        $unidad1 = new Unidades1Model();
+        $datos = [
+            'carne_alumno'=>$this->request->getPost('txt_carne'),
+            'curso_1'=>$this->request->getPost('txt_curso1'),
+            'curso_2'=>$this->request->getPost('txt_curso2'),
+            'curso_3'=>$this->request->getPost('txt_curso3'),
+            'curso_4'=>$this->request->getPost('txt_curso4'),
+            'curso_5'=>$this->request->getPost('txt_curso5')
+        ];
+
+        $unidad1->insert($datos);
+        return $this->index();
+    }
+    
 }

@@ -60,6 +60,81 @@
         </div>
     </div>
 
+<br><br><br>
+    <!--agregar estudiantes-->
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-outline-primary btn-lg rounded-pill shadow px-4" data-bs-toggle="modal"
+        data-bs-target="#exampleModal">
+        <i class="bi bi-plus-circle"></i> AGREGAR NUEVO REGISTRO
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0"><i class="bi bi-person-badge"></i> Registro de Notas</h5>
+                        </div>
+                        <div class="card-body">
+                            <form action="<?=base_url('agregar_unidad2');?>" method="post">
+                                <div class="mb-2">
+                                    <label for="txt_carne" class="form-label">Carné del alumno</label>
+                                    <input type="number" class="form-control" name="txt_carne" id="txt_carne" required>
+                                </div>
+
+                                <div class="row g-2">
+                                    <div class="col-md-6">
+                                        <label for="txt_curso1" class="form-label">Estadística</label>
+                                        <input type="number" class="form-control" name="txt_curso1" id="txt_curso1"
+                                            required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="txt_curso2" class="form-label">Matemáticas</label>
+                                        <input type="number" class="form-control" name="txt_curso2" id="txt_curso2"
+                                            required>
+                                    </div>
+                                </div>
+
+                                <div class="row g-2 mt-1">
+                                    <div class="col-md-6">
+                                        <label for="txt_curso3" class="form-label">Laboratorio 1</label>
+                                        <input type="number" class="form-control" name="txt_curso3" id="txt_curso3"
+                                            required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="txt_curso4" class="form-label">Computación Aplicada</label>
+                                        <input type="number" class="form-control" name="txt_curso4" id="txt_curso4"
+                                            required>
+                                    </div>
+                                </div>
+
+                                <div class="row g-2 mt-1">
+                                    <div class="col-md-6">
+                                        <label for="txt_curso5" class="form-label">Sistemas e Instalación de Software</label>
+                                        <input type="number" class="form-control" name="txt_curso5" id="txt_curso5"
+                                            required>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-end gap-2 mt-3">
+                                    <button type="submit" class="btn btn-outline-primary btn-lg rounded-pill shadow px-4"
+                                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <i class="bi bi-plus-square"></i> Agregar Datos
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <br><br><br>
     <h1>NOTAS SEGUNDA UNIDAD</h1>

@@ -42,6 +42,8 @@ $routes->post('modificar_unidad3','Unidades3Controller::modificarUnidad3');
 $routes->get('unidades4','Unidades4Controller::index');
 $routes->post('agregar_unidad4','Unidades4Controller::agregarUnidad4');
 $routes->get('eliminar_unidad4/(:num)','Unidades4Controller::eliminarUnidad4/$1');
+$routes->get('buscar_unidad4/(:num)','Unidades4Controller::buscarUnidad4/$1');
+$routes->post('modificar_unidad4','Unidades4Controller::modificarUnidad4');
 
 //tipos usuarios
 $routes->get ('tiposusuarios','TiposusuariosController::index');

@@ -33,4 +33,24 @@ class Unidades1Controller extends BaseController
         return $this->index();
     }
     
+     public function buscarUnidad1($codigo){
+        $unidad1 = new Unidades1Model();
+        $datos['datos']=$unidad1->where('carne_alumno',$codigo)->first();
+        return view('form_editar_unidad1',$datos);
+    }
+
+    public function modificarUnidad1(){
+        $unidad1 = new Unidades1Model();
+        $datos = [
+            'curso_1'=>$this->request->getPost('txt_curso1'),
+            'curso_2'=>$this->request->getPost('txt_curso2'),
+            'curso_3'=>$this->request->getPost('txt_curso3'),
+            'curso_4'=>$this->request->getPost('txt_curso4'),
+            'curso_5'=>$this->request->getPost('txt_curso5')
+        ];
+
+        $codigo = $this->request->getPost('txt_carne');
+        $unidad1->update($codigo, $datos);
+        return $this->index();
+    }
 }

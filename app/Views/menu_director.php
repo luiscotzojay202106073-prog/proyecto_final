@@ -7,6 +7,17 @@
     <title>Usuario Director</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+    .logo-img {
+        max-width: 400px;
+        height: auto;
+        margin: 0 15px;
+    }
+
+    .credit-section {
+        margin-top: 50px;
+    }
+    </style>
 </head>
 
 <body>
@@ -61,12 +72,68 @@
         </div>
     </div>
 
+    <br><br>
+    <div class="row">
+        <!-- Misión -->
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+                <div class="card-body">
+                    <h4 class="card-title text-primary">Misión</h4>
+                    <p class="card-text">
+                        Brindar una educación integral, inclusiva y de calidad que promueva el desarrollo académico,
+                        social y humano de los estudiantes, fomentando valores cívicos, éticos y culturales. Nuestro
+                        compromiso es formar ciudadanos competentes, críticos y responsables que contribuyan activamente
+                        al progreso de su comunidad y del país.
+                    </p>
+                </div>
+            </div>
+        </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
-    </script>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+                <div class="card-body">
+                    <h4 class="card-title text-success">Visión</h4>
+                    <p class="card-text">
+                        Ser un centro educativo público referente en excelencia académica y formación en valores,
+                        reconocido por su compromiso con la equidad, la innovación pedagógica y la participación
+                        comunitaria, impulsando una educación que transforme vidas y fortalezca el desarrollo sostenible
+                        de Guatemala.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Sección de logos -->
+        <header class="bg-primary text-white text-center py-5 shadow-sm">
+            <h1 class="fw-bold">Universidad de San Carlos de Guatemala -USAC-</h1>
+            <h2 class="lead">Escuela de Formación de Profesores de Enseñanza Media -EFPEM-</h2>
+        </header>
+        <br>
 
-    <?php
+        <!-- Sección de nombre del creador y título -->
+        <section class="text-center mb-5">
+            <br>
+            <h2 class="text-secondary fw-bold mb-3">Creadores</h2>
+            <p class="fs-5"><u>Luis Antonio Cotzojay Culajay 202106073</u> <br> "Diseño, estructura y configuración completa de la página, visualización de todas las bases de datos, login, CRUD estudiantes y usuarios"</p>
+            <br>
+            <p class="fs-5"><u>Gabriela Magaly de León Secay 202106372</u> <br> "Funciones de agregar, eliminar y modificar notas de la primera y segunda unidad" </p>
+            <br>
+            <p class="fs-5"><u>Miriam Elizabeth Mejía Ajanel 202105950</u> <br> "Funciones de agregar, eliminar y modificar notas de la tercera y cuarta unidad"</p>
+
+            <h2 class="text-secondary fw-bold mt-4 mb-3">Proyecto Final</h2>
+            <p class="fs-5">Proyectos de Programación 2025</p>
+        </section>
+
+        <!-- Pie de página -->
+        <footer class="bg-dark text-white text-center py-3">
+            <small>&copy; 2025 | @ProyectosProgra</small>
+        </footer>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
+        </script>
+
+        <?php
       } //fin de else que verifica si la sesion está activa
     ?>
 </body>

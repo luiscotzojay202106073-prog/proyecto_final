@@ -177,6 +177,7 @@
                 <td>
                     <a href="<?=base_url('eliminar_estudiante/').$estudiante['carne_alumno'];?>" class="btn btn-outline-danger bg-gradient text-danger shadow px-4">Eliminar <i class="bi bi-trash3"></i></a>
                     <a href="<?=base_url('buscar_estudiante/').$estudiante['carne_alumno'];?>" class="btn btn-outline-info bg-gradient text-info shadow px-4">Modificar <i class="bi bi-pencil-square"></i></a>
+                    
                 </td>
             </tr>
             <?php

@@ -37,6 +37,7 @@ $routes->post('modificar_unidad3','Unidades3Controller::modificarUnidad3');
 
 //Unidad4
 $routes->get('unidades4','Unidades4Controller::index');
+$routes->post('agregar_unidad4','Unidades4Controller::agregarUnidad4');
 
 //tipos usuarios
 $routes->get ('tiposusuarios','TiposusuariosController::index');

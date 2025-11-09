@@ -28,6 +28,8 @@ $routes->post('modificar_unidad1','Unidades1Controller::modificarUnidad1');
 $routes->get('unidades2','Unidades2Controller::index');
 $routes->post('agregar_unidad2','Unidades2Controller::agregarUnidad2');
 $routes->get('eliminar_unidad2/(:num)','Unidades2Controller::eliminarUnidad2/$1');
+$routes->get('buscar_unidad2/(:num)','Unidades2Controller::buscarUnidad2/$1');
+$routes->post('modificar_unidad2','Unidades2Controller::modificarUnidad2');
 
 //Unidad3
 $routes->get('unidades3','Unidades3Controller::index');

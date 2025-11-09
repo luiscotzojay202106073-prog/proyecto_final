@@ -27,4 +27,9 @@ class Unidades2Controller extends BaseController
         return $this->index();
     }
     
+    public function eliminarUnidad2($id){
+        $unidad2 = new Unidades2Model();
+        $unidad2->delete($id);
+        return $this->index();
+    }
 }

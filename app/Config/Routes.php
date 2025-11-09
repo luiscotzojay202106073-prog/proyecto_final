@@ -25,6 +25,7 @@ $routes->get('unidades2','Unidades2Controller::index');
 
 //Unidad3
 $routes->get('unidades3','Unidades3Controller::index');
+$routes->post('agregar_unidad3','Unidades3Controller::agregarUnidad3');
 
 //Unidad4
 $routes->get('unidades4','Unidades4Controller::index');
